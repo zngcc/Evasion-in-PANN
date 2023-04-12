@@ -1,0 +1,9 @@
+---  new folder...  ---
+Traceback (most recent call last):
+  File "/userhome/35/czhang2/Deeplearning/approxCNN/cifar100_area_atk_compare_simple_approxmodelgrads.py", line 161, in <module>
+    original_model.load_state_dict(torch.load(params_path))
+  File "/userhome/35/czhang2/anaconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1671, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for ResNet:
+        Missing key(s) in state_dict: "linear.weight", "linear.bias". 
+        Unexpected key(s) in state_dict: "fc.weight", "fc.bias", "layer2.0.downsample.0.weight", "layer2.0.downsample.1.weight", "layer2.0.downsample.1.bias", "layer2.0.downsample.1.running_mean", "layer2.0.downsample.1.running_var", "layer2.0.downsample.1.num_batches_tracked", "layer3.0.downsample.0.weight", "layer3.0.downsample.1.weight", "layer3.0.downsample.1.bias", "layer3.0.downsample.1.running_mean", "layer3.0.downsample.1.running_var", "layer3.0.downsample.1.num_batches_tracked". 
